@@ -5,6 +5,7 @@
   "description": "Versão móvel do systema de atendimento online ticket4.fun",
   "main": "index.js",
   "scripts": {
+    "git:start": "bash scripts/git/start.sh",
     "upload:cdn": "node scripts/uploadCdn.js",
     "debug:build": "cordova build android",
     "release:build": "cordova build android --release",
