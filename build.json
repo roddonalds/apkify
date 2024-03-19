@@ -1,0 +1,21 @@
+{
+    "android": {
+        "release": {
+            "keystore": "./ropsoft.keystore",
+            "storePassword": "09080700",
+            "alias": "ropsoft",
+            "password" : "09080700",
+            "keystoreType": "",
+            "packageType": "bundle"
+        },
+
+        "debug": {
+            "keystore": "./ropsoft.keystore",
+            "storePassword": "09080700",
+            "alias": "ropsoft",
+            "password" : "09080700",
+            "keystoreType": "",
+            "packageType": "apk"
+        }
+    }
+}

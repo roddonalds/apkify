@@ -1,0 +1,14 @@
+script de versionar apks em pasta em root,
+
+script de builda release, assina e...
+....script de autopublica na playstore
+
+https://stackoverflow.com/questions/26449512/how-to-create-a-signed-apk-file-using-cordova-command-line-interface
+https://www.npmjs.com/package/apkup
+
+documentar environment e steps lembra da dradlw update e da mudanca direta no manifest.xml do exported true e cordova-icon e --internett aquele arg q n pega q vem padrao na plat android
+documentar proj
+
+buta aqruivo de auto sign                                                                                                                                                                                               
+bota pra automudar o versao num huk before_prepare algo assim
+auto upload to remote server

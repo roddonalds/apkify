@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline</title>                                                                                                                      
+    <style>                                                                 
+
+        * {
+            color: #272032;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.png');
+            background-color: whitesmoke;
+            background-size: cover;
+            background-position: top;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            background-color: #f15d39;
+        }
+
+        a i {
+            color: white;
+            margin-left: 5px;
+        }
+        .logo img {
+            height: 25vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" />
+        </div>
+        <h1>Não foi possível conectar-se.</h1>
+        <p>Verifique sua conexão. Se o problema persistir, entre em contato com o suporte.</p>
+
+        <a href="index.html">Tentar novamente ⟳ </a>
+    </div>
+</body>
+</html>
