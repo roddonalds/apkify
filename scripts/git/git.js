@@ -18,8 +18,8 @@ function main () {
     
     const c1 = 'cd /root/app',
             c2 = 'git add .',
-            c3 = 'git commit -m updev',
-            c4 = 'git push origin dev';
+            c3 = 'git commit -m up',
+            c4 = 'git push origin main';
 
     sjs.exec(`${c1} && ${c2} && ${c3} && ${c4}`);
 }
