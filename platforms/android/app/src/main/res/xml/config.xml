@@ -25,6 +25,7 @@
     <icon src="icon.png" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="android-exported" value="true" />
     <preference name="jdkVersion" value="8" />
     <preference name="android-minSdkVersion" value="19" />
     <preference name="android-targetSdkVersion" value="33" />
