@@ -1,7 +1,7 @@
 {
   "name": "com.ropsoft.ticket4fun",
   "displayName": "ticket4.fun",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Versão móvel do systema de atendimento online ticket4.fun",
   "main": "index.js",
   "scripts": {
