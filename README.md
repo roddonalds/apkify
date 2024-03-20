@@ -18,6 +18,7 @@ on ~/
     sudo apt install android-sdk -y
     sudo apt install gradle
     sudo apt install sdkmanager
+    sudo apt install imagemagisk
 
     sdkmanager "build-tools;19.1.0"
 

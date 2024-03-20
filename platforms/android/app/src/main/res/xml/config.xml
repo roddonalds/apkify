@@ -26,9 +26,9 @@
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="jdkVersion" value="8" />
+    <preference name="android-minSdkVersion" value="19" />
     <preference name="android-targetSdkVersion" value="33" />
     <preference name="android-compileSdkVersion" value="33" />
-    <preference name="BackgroundColor" value="#272032" />
     <preference name="KeepRunning" value="true" />
     <preference name="Fullscreen" value="true" />
 </widget>
