@@ -8,12 +8,18 @@ const pathDistDir = '/root/app/dist',
         pathSrcBuiltReleaseAab = pathBuildDir + '/bundle/release/app-release.aab';
 
 (() => {
+
     console.log('Cleaning dist dir')
     sjs.exec(`rm ${pathDistDir}/debugLatest.apk`)
     sjs.exec(`rm ${pathDistDir}/releaseLatest.aab`)
-    sjs.exec('sleep 3')
+    sjs.exec('sleep 1.5')
+
     console.log('Coping newest built .apk to dist dir')
     sjs.exec(`cp ${pathSrcBuiltDebugApk} ${pathDistDir}/debugLatest.apk`)
     console.log('Coping newest built .aab to dist dir')
     sjs.exec(`cp ${pathSrcBuiltReleaseAab} ${pathDistDir}/releaseLatest.aab`)
+
+    console.log('Cleaning build dir')
+    sjs.exec(`rm ${pathSrcBuiltDebugApk}`)
+    sjs.exec(`rm ${pathSrcBuiltReleaseAab}`)
 })();

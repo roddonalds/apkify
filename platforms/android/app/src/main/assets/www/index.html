@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Servidor</title>
+    <style>
+
+        * {
+            color: #272032;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.png');
+            background-color: whitesmoke;
+            background-size: cover;
+            background-position: top;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 20px;                                                                                                                                                                                                                                                                                                                      px;
+            margin-bottom: 20px;
+        }                       
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            height: 25vh;
+        }
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px dotted #FFF;
+  border-style: solid solid dotted dotted;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+  vertical-align: middle;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px dotted #FF3D00;
+  border-style: solid solid dotted;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  animation: rotationBack 1s linear infinite;
+  transform-origin: center center;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+} 
+    </style>
+    <script>
+        function verificarServidor() {
+
+            var url = "https://app.ticket4.fun";                                                                                                                                                                                                            
+            
+            fetch(url, { method: "HEAD" })
+            .then(function(response) {
+                if (response.ok) {
+                    window.open(url, '_self');
+                } else {
+                    window.location.href = "offline.html";
+                }
+            })
+            .catch(function(error) {
+                console.error('Erro ao verificar o servidor:', error);
+                window.location.href = "offline.html";
+            });
+        }
+
+        window.onload = function() {
+            setTimeout(() => {          
+                verificarServidor();
+            }, 3000)
+        };
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" />
+        </div>
+        <h1>Conectando... <span class="loader"></span></h1>
+    </div>
+</body>
+</html>
