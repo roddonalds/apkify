@@ -5,6 +5,9 @@
   "description": "Versão móvel do systema de atendimento online ticket4.fun",
   "main": "index.js",
   "scripts": {
+    "edit:rc": "nano ~/.bashrc",
+    "source:rc": "bash source ~/.bashrc",
+    "set:icon": "cordova-icon",
     "git:start": "bash scripts/git/start.sh",
     "upload:cdn": "node scripts/uploadCdn.js",
     "debug:build": "cordova build android",
