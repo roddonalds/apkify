@@ -37,6 +37,7 @@ class AndroidManifest {
     }
 
     setVersionName (versionName) {
+        this.doc.getroot().attrib['android:exported'] = true;
         this.doc.getroot().attrib['android:versionName'] = versionName;
         return this;
     }
