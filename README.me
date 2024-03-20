@@ -21,6 +21,12 @@ on ~/
 
     sdkmanager "build-tools;19.1.0"
 
+    git config --global init.defaultBranch main
+    git config --global user.name "roddonalds"
+    git config --global user.email "zaffpontoquarenta@gmail.com"
+
+    npm run git:start
+    
 on ~/app
 
 	npm install
