@@ -1,6 +1,6 @@
 const sjs = require('shelljs');
 
-sjs.config.silent = true;
+// sjs.config.silent = true;
 
 const pathDistDir = '/root/app/dist',
         remoteDistDir = '/home/deploy/ticket4.fun/_proj/cdn',
