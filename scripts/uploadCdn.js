@@ -14,10 +14,10 @@ const remotePathFiles = '/home/deploy/ticket4.fun/_proj/cdn',
 
 ;(() => {
 
-    console.log('Removing current .apk file.')
+    console.log('Removing current .apk file from remote CDN server.')
     sjs.exec(`ssh ${remoteUser}@${remoteAddr} 'rm ${remotePathApk}'`)
 
-    console.log('Removing current .aab file.')
+    console.log('Removing current .aab file from remote CDN server.')
     sjs.exec(`ssh ${remoteUser}@${remoteAddr} 'rm ${remotePathAab}'`)
 
     setTimeout(() => {
