@@ -14,11 +14,13 @@ on ~/
     npm install -g pm2
     pm2 startup
 
+    sudo apt install build-essential
     sudo apt install openjdk-8-jdk -y
     sudo apt install android-sdk -y
     sudo apt install gradle
     sudo apt install sdkmanager
     sudo apt install imagemagisk
+    sudo apt install zipalign
 
     sdkmanager "build-tools;19.1.0"
 
