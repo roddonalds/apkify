@@ -24,7 +24,7 @@ const pathDistDir = '/root/app/dist',
     console.log('Coping newest built .aab to dist dir')
     sjs.exec(`cp ${pathSrcBuiltReleaseAab} ${pathDistDir}/releaseLatest.aab`)
 
-    console.log('Cleaning build dir')
-    sjs.exec(`rm ${pathSrcBuiltDebugApk}`)
-    sjs.exec(`rm ${pathSrcBuiltReleaseAab}`)
+    //console.log('Cleaning build dir')
+    //sjs.exec(`rm ${pathSrcBuiltDebugApk}`)
+    //sjs.exec(`rm ${pathSrcBuiltReleaseAab}`)
 })();
