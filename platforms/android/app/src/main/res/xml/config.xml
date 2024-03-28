@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ropsoft.ticket4fun" version="1.1.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <allow-navigation href="http://localhost/*" />
+    <allow-navigation href="https://localhost/*" />
+    <allow-navigation href="ionic://*" />
+    <feature name="IonicWebView">
+        <param name="android-package" value="com.ionicframework.cordova.webview.IonicWebView" />
+    </feature>
+    <feature name="CDVIonicKeyboard">
+        <param name="android-package" onload="true" value="io.ionic.keyboard.CDVIonicKeyboard" />
+    </feature>
+    <name>ticket4.fun</name>
+    <description>
+        Versão móvel do systema de atendimento online ticket4.fun
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        ropsoft
+    </author>
+    <content src="index.html" />
+    <hook src="scripts/hooks/afterBuild.js" type="after_build" />
+    <hook src="scripts/hooks/beforePrepare.js" type="before_prepare" />
+    <config-file parent="/manifest" target="AndroidManifest.xml" xmlns:android="http://schemas.android.com/apk/res/android">
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+        <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+        <uses-permission android:name="android.permission.SET_ORIENTATION" />
+    </config-file>
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon src="icon.png" />
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="webView" value="com.ionicframework.cordova.webview.IonicWebViewEngine" />
+    <preference name="android-minSdkVersion" value="21" />
+    <preference name="android-targetSdkVersion" value="33" />
+    <preference name="android-compileSdkVersion" value="33" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="KeepRunning" value="true" />
+    <preference name="LoadUrlTimeoutValue" value="5000" />
+    <preference name="SplashScreen" value="none" />
+    <preference name="resizeOnFullScreen" value="true" />
+</widget>

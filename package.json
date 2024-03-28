@@ -1,0 +1,42 @@
+{
+  "name": "com.ropsoft.ticket4fun",
+  "displayName": "ticket4.fun",
+  "version": "1.1.4",
+  "description": "Versão móvel do systema de atendimento online ticket4.fun",
+  "main": "index.js",
+  "bin": "bin/apkify.js",
+  "scripts": {
+    "set:icon": "cordova-icon",
+    "both:build": "npm run release:build && npm run debug:build",
+    "debug:build": "cordova build android",
+    "release:build": "cordova build android --release",
+    "platform:clean": "cordova clean"
+  },
+  "keywords": [ "ecosystem:cordova" ],
+  "author": "ropsoft",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "9.1.0",
+    "cordova-plugin-ionic-webview": "^5.0.1",
+    "cordova-plugin-powermanagement-orig": "github:Viras-/cordova-plugin-powermanagement",
+    "cordova-plugin-proguard": "^2.2.0",
+    "cordova-plugin-whitelist": "1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-proguard": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-keyboard": {}
+    },
+    "platforms": [ "android" ]
+  },
+  "dependencies": {
+    "cordova-icon": "1.0.0",
+    "shelljs": "0.8.5",
+    "json-beautify": "1.1.1",
+    "xml2js": "0.6.2"
+  },
+  "engines": { "node": "v16.20.1", "npm": "8.19.4" }
+}

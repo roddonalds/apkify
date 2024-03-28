@@ -1,0 +1,1 @@
+keytool -genkey -v -keystore ropsoft.keystore -alias ropsoft -keyalg RSA -keysize 2048 -validity 99999
